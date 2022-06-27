@@ -1,0 +1,154 @@
+/* External Styles  */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 10px;
+  text-shadow: 1px 1px #000000;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  background: #1d3557;
+  height: 112px;
+  padding: 5px 0px 5px 0px; /* up right bottom left */
+  position: relative;
+  width: 80%;
+  z-index: 1;
+}
+
+header div {
+  background-color: #e63946;
+  border: 1px solid #aaaaaa;
+  color: #a8dadc;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  margin: 0px 2px;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+header h1 {
+  color: #a8dadc;
+  font-family: "Lucida Console", monospace;
+}
+
+header a {
+  color: #f1faee;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  color: #1d3557;
+  font-family: "Monaco", monospace;
+  justify-content: center;
+
+  background: #f1faee;
+  height: 500px;
+  padding: 5px 0px 5px 0px; /* up right bottom left */
+  position: relative;
+  width: 80%;
+  z-index: 0;
+}
+
+main h2 {
+  text-align: center;
+}
+
+main table {
+  border-collapse: collapse;
+}
+
+main tr:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+main tr:hover {
+  background-color: black;
+  color: #e63946;
+}
+
+main th, main td {
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+}
+
+main th {
+  background-color: #a8dadc;
+  font-size: 20px;
+}
+
+main td {
+  font-size: 18px;
+}
+
+.table-sortable th {
+  cursor: pointer;
+}
+
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background-color: #000000;
+}
+
+.table-sortable .th-sort-asc::after {
+  content: "\25b4";
+  margin-left: 3px
+}
+
+.table-sortable .th-sort-desc::after {
+  content: "\25be";
+  margin-left: 3px
+}
+
+footer {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+
+  background: #1d3557;
+  padding: 5px 0px 5px 0px; /* up right bottom left */
+  position: relative;
+  width: 80%;
+  z-index: 0;
+}
+
+footer div {
+  background-color: #e63946;
+  border: 1px solid #aaaaaa;
+  color: #a8dadc;
+  font-family: "Lucida Console", monospace;
+  font-size: 18px;
+  margin: 0px 2px;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+footer button {
+  background-color: #ffffff;
+  color: #457b9d;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*
+Color Palette Used:
+https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557
+--imperial-red: #e63946;
+--honeydew: #f1faee;
+--powder-blue: #a8dadc;
+--celadon-blue: #457b9d;
+--prussian-blue: #1d3557;
+*/
