@@ -21,7 +21,7 @@ header {
 
   background: #1d3557;
   height: 112px;
-  padding: 5px 0px 5px 0px; /* up right bottom left */
+  padding: 2px 0px; /* up|bottom right|left */
   position: relative;
   width: 80%;
   z-index: 1;
@@ -34,8 +34,16 @@ header div {
   font-family: "Courier New", monospace;
   font-size: 18px;
   margin: 0px 2px;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+header div .a,
+header div .b,
+header div .c,
+header div .d {
+  background-color: #000000;
   padding: 5px 10px;
-  text-align: justify;
 }
 
 header h1 {
@@ -55,7 +63,7 @@ main {
   justify-content: center;
 
   background: #f1faee;
-  height: 500px;
+  height: 400px;
   padding: 5px 0px 5px 0px; /* up right bottom left */
   position: relative;
   width: 80%;
@@ -64,6 +72,15 @@ main {
 
 main h2 {
   text-align: center;
+}
+
+main h3 {
+  padding-left: 20px;
+}
+
+main p {
+  margin: 0px 20px;
+  text-align: left;
 }
 
 main table {
@@ -112,12 +129,38 @@ main td {
   margin-left: 3px
 }
 
+main div .plrInfo {
+  color: #e63946;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 10px 0px 10px;
+}
+
+main div .plrPicInfo {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+main div img {
+  border: 3px solid #1d3557;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+main div .plrInfoInfo {
+  font-size: 18px;
+  padding: 10px;
+}
+
 footer {
   justify-content: center;
   display: flex;
   flex-direction: row;
 
   background: #1d3557;
+  bottom: 0;
   padding: 5px 0px 5px 0px; /* up right bottom left */
   position: relative;
   width: 80%;
@@ -132,7 +175,7 @@ footer div {
   font-size: 18px;
   margin: 0px 2px;
   padding: 5px 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 footer button {

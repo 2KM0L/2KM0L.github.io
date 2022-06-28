@@ -13,29 +13,29 @@
     <header>
       <h1>BONAKIDS</h1>
       <div>
-        <a class="a" href="">ROSTER</a>
+        <a href="index.html">&emsp;ROSTER</a>
         <a href="players.html">PLAYERS</a>
         <a href="about.html">ABOUT</a>
-        <a href="contact.html">CONTACT&emsp;</a>
+        <a class="d" href="">CONTACT</a>
       </div>
     </header>
 
     <main>
       <div>
-        <h2>ROSTER</h2>
-        <table class="table table-sortable">
-          <thead>
-            <tr>
-              <th>JERSEY</th>
-              <th>PLAYER</th>
-              <th>POSITION</th>
-              <th>HEIGHT</th>
-              <th>WEIGHT</th>
-            </tr>
-          </thead>
+        <h2>CONTACT</h2>
+        <form>
+          <fieldset>
+            <legend>Your Info</legend>
+            <input type="text" name="name" placeholder="Name:"><br>
+            <input type="text" name="email" placeholder="Email:">
+          </fieldset>
 
-          <tbody id="rosterTableData"></tbody>
-        </table>
+          <fieldset>
+            <legend>Your Concern</legend>
+            <input type="text" placeholder="Subject"><br>
+            <textarea style="height: 120px; width: 171px;"></textarea>
+          </fieldset>
+        </form>
       </div>
     </main>
 
